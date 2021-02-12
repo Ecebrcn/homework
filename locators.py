@@ -14,16 +14,16 @@ JOURNEY_LIST_FILTER = (By.ID, 'search-value')
 JOURNEY_TAG_LIST = (By.CLASS_NAME, 'tag animationHalf')
 
 #on Journey do list how to click exactly needed Statistics button if there is more than 1 campaigns in the list
-STATISTICS_BTN = (By.XPATH, '//div[contains(@class, "tooltip-align-right")][8]')
+STATISTICS_BTN = (By.CSS_SELECTOR, "tr:nth-child(8) > .statistics")
 
 #on Message box design page remove variation cross icon
 DELETE_VARIATION = (By.XPATH, '//*[@id="delete"]')
 
 #Remove / Change element buttons on Journey canvas page
-CHANGE_ELEMENT = (By.XPATH, '//p[contains(@class, "text")][1]')
+CHANGE_ELEMENT = (By.XPATH, '//div[contains(@class, "d-f a-i-c t-a-c cur-p")][1]')
 
 # Remove / Change element buttons on Journey canvas page
-REMOVE_ELEMENT = (By.XPATH, '//p[contains(@class, "text")][2]')
+REMOVE_ELEMENT = (By.XPATH, '//div[contains(@class, "d-f a-i-c t-a-c cur-p")][2]')
 
 #Alert toaster on any page of panel
 ALERT_TOASTER = (By.CLASS_NAME, 'messageAlertBoxIcon')

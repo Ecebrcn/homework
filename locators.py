@@ -20,10 +20,10 @@ STATISTICS_BTN = (By.CSS_SELECTOR, "tr:nth-child(8) > .statistics")
 DELETE_VARIATION = (By.XPATH, '//*[@id="delete"]')
 
 #Remove / Change element buttons on Journey canvas page
-CHANGE_ELEMENT = (By.XPATH, '//div[contains(@class, "d-f a-i-c t-a-c cur-p")][1]')
+CHANGE_ELEMENT = (By.XPATH, '//*[contains(text(), "Change")]')
 
 # Remove / Change element buttons on Journey canvas page
-REMOVE_ELEMENT = (By.XPATH, '//div[contains(@class, "d-f a-i-c t-a-c cur-p")][2]')
+REMOVE_ELEMENT = (By.XPATH, '//p[contains(text(), "Delete")]')
 
 #Alert toaster on any page of panel
 ALERT_TOASTER = (By.CLASS_NAME, 'messageAlertBoxIcon')
